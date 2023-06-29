@@ -1,8 +1,7 @@
 gcb:
   version: 1.0.x
   js:
-    https://www.hel.fi/chat/palvelukeskus/cobrowse/js/gcb.min.js: {
-      type: external,
+    assets/js/gcb.min.js: {
       minified: true,
       attributes: {
         async: true,
