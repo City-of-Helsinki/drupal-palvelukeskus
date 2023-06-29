@@ -3,5 +3,5 @@ type: module
 description: 'Integrates genesys chat'
 package: Custom
 core_version_requirement: ^9 ||^10
-'interface translation project': helfi_platform_config
-'interface translation server pattern': modules/contrib/helfi_platform_config/translations/new/%language.po
+'interface translation project': helfi_palvelukeskus_genesys
+'interface translation server pattern': modules/custom/helfi_palvelukeskus_genesys/translations/%language.po
