@@ -52,6 +52,7 @@ module:
   helfi_node_announcement: 0
   helfi_node_landing_page: 0
   helfi_node_page: 0
+  helfi_palvelukeskus_genesys: 0
   helfi_paragraphs_accordion: 0
   helfi_paragraphs_banner: 0
   helfi_paragraphs_chart: 0
