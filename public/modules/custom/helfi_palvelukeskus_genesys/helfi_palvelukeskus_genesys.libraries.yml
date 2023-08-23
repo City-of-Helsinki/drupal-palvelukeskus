@@ -5,7 +5,7 @@ gcb:
       minified: true,
       attributes: {
         async: true,
-        data-gcb-url: 'https://www.hel.fi/chat/palvelukeskus/cobrowse'
+        data-gcb-url: 'https://chat-proxy.hel.fi/chat/palvelukeskus/cobrowse'
       }
     }
 

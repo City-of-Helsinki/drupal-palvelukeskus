@@ -22,15 +22,15 @@ window.addEventListener('storage', (event) => {
   Drupal.behaviors.palvelukeskus_genesys = {
     attach: (context, settings) => {
       const localization  = 'https://www.hel.fi/chat/palvelukeskus/custom/chat-matkapalvelu-fi.json';
-      const serverUrl = 'https://www.hel.fi/chat/palvelukeskus/cobrowse';
-      const cbUrl = 'https://www.hel.fi/chat/palvelukeskus/cobrowse';
+      const serverUrl = 'https://chat-proxy.hel.fi/chat/palvelukeskus/cobrowse';
+      const cbUrl = 'https://chat-proxy.hel.fi/chat/palvelukeskus/cobrowse';
       const serviceId = 'MATKAPALVELU';
 
 
       const urlParams = new URLSearchParams(window.location.search);
       const referredData = urlParams.get(referredDataKey);
 
-      // Store referredData to localStorage if present
+      // Store referredData to localStorage if present  
       if (referredData) {
         localStorage.setItem(localDataKey, referredData);
       }
