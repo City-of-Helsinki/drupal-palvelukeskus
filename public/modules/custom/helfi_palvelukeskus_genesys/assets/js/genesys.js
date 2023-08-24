@@ -21,6 +21,7 @@ window.addEventListener('storage', (event) => {
 
   Drupal.behaviors.palvelukeskus_genesys = {
     attach: (context, settings) => {
+      // @todo: https://chat-proxy.hel.fi/chat/palvelukeskus/custom/chat-matkapalvelu-fi.json doesn't work, change to it as soon as it does
       const localization  = 'https://www.hel.fi/chat/palvelukeskus/custom/chat-matkapalvelu-fi.json';
       const serverUrl = 'https://chat-proxy.hel.fi/chat/palvelukeskus/cobrowse';
       const cbUrl = 'https://chat-proxy.hel.fi/chat/palvelukeskus/cobrowse';
