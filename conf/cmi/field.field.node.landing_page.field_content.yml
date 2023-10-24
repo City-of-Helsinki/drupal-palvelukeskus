@@ -12,6 +12,7 @@ dependencies:
     - paragraphs.paragraphs_type.content_liftup
     - paragraphs.paragraphs_type.event_list
     - paragraphs.paragraphs_type.from_library
+    - paragraphs.paragraphs_type.hearings
     - paragraphs.paragraphs_type.liftup_with_image
     - paragraphs.paragraphs_type.list_of_links
     - paragraphs.paragraphs_type.map
@@ -26,12 +27,12 @@ dependencies:
   module:
     - entity_reference_revisions
 _core:
-  default_config_hash: D7s90vFMq6Tjc-ThXp4s3q8tO6lTN1lBPY3e63U8chU
+  default_config_hash: zEXoDFJnyArUOiL2ZrtDuq4YDWKyn6ung9JndPk_Ntg
 id: node.landing_page.field_content
 field_name: field_content
 entity_type: node
 bundle: landing_page
-label: 'Content region'
+label: Sisältöalue
 description: ''
 required: false
 translatable: true
@@ -56,6 +57,7 @@ settings:
       phasing: phasing
       popular_services: popular_services
       target_group_links: target_group_links
+      hearings: hearings
       unit_search: unit_search
       service_list: service_list
       service_list_search: service_list_search
@@ -80,6 +82,9 @@ settings:
         weight: 0
         enabled: true
       from_library:
+        weight: 0
+        enabled: true
+      hearings:
         weight: 0
         enabled: true
       liftup_with_image:

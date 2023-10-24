@@ -15,20 +15,20 @@ settings:
   allowed_values:
     -
       value: without-image-left
-      label: 'Without image, align left'
+      label: 'Ilman kuvaa, tasattu vasemmalle'
     -
       value: with-image-right
-      label: 'Image on the right'
+      label: 'Kuva oikealla'
     -
       value: with-image-left
-      label: 'Image on the left'
+      label: 'Kuva vasemmalla'
     -
       value: with-image-bottom
-      label: 'Image on the bottom'
+      label: 'Kuva alhaalla'
     -
       value: diagonal
-      label: Diagonal
-  allowed_values_function: ''
+      label: Diagonaalinen
+  allowed_values_function: helfi_paragraphs_hero_design_allowed_values
 module: options
 locked: false
 cardinality: 1
