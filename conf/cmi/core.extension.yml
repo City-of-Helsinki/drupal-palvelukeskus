@@ -60,6 +60,7 @@ module:
   helfi_paragraphs_contact_card_listing: 0
   helfi_paragraphs_content_cards: 0
   helfi_paragraphs_content_liftup: 0
+  helfi_paragraphs_hearings: 0
   helfi_paragraphs_hero: 0
   helfi_paragraphs_image: 0
   helfi_paragraphs_liftup_with_image: 0
@@ -83,6 +84,8 @@ module:
   image_style_quality: 0
   imagecache_external: 0
   imagemagick: 0
+  jquery_ui: 0
+  jquery_ui_draggable: 0
   language: 0
   link: 0
   linkit: 0
@@ -122,6 +125,7 @@ module:
   social_media: 0
   sophron: 0
   stage_file_proxy: 0
+  stomp: 0
   system: 0
   taxonomy: 0
   telephone: 0
