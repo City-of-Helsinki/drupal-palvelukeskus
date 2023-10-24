@@ -1,0 +1,20 @@
+msgid ""
+msgstr ""
+
+msgid "Open Matkapalvelu chat"
+msgstr "Avaa Matkapalvelun chat"
+
+msgid "To use this chat you need to identify using bank or mobile verification:"
+msgstr "Käyttääksesi chattia sinun tulee tunnistautua pankkitunnuksilla tai mobiilivarmenteella:"
+
+msgid "Authentication in progress..."
+msgstr "Tunnistautuminen käynnissä..."
+
+msgid "Authenticate in an outside service"
+msgstr "Tunnistaudu ulkopuolisessa palvelussa"
+
+msgid "Abort and collapse chat"
+msgstr "Keskeytä ja sulje chat"
+
+msgid "Minimize"
+msgstr "Pienennä"

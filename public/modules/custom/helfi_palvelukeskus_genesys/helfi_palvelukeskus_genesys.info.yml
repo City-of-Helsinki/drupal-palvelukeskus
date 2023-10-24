@@ -1,0 +1,7 @@
+name: 'Helfi Palvelukeskus Genesys'
+type: module
+description: 'Integrates genesys chat'
+package: Custom
+core_version_requirement: ^9 ||^10
+'interface translation project': helfi_palvelukeskus_genesys
+'interface translation server pattern': modules/custom/helfi_palvelukeskus_genesys/translations/%language.po

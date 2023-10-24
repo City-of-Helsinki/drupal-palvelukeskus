@@ -7,6 +7,8 @@
 
 declare(strict_types = 1);
 
+use Drupal\Core\Url;
+
 /**
  * Implements hook_preprocess_HOOK().
  */
@@ -41,4 +43,20 @@ function hdbt_subtheme_theme_suggestions_menu_alter(&$suggestions, $variables) {
       default => 'menu__' . $variables['attributes']['block_id'],
     };
   }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function hdbt_subtheme_preprocess_block__helfi_palvelukeskus_genesys(&$variables) {
+  $currentPath = Url::fromRoute('<current>', [], ['absolute' => TRUE])->toString();
+
+  if ($currentPath) {
+    $shibbolethString = 'https://asiointi.hel.fi/chat/tunnistus/Shibboleth.sso/KAPALogin?'
+     . 'target=https://asiointi.hel.fi/chat/tunnistus/chat2/MagicPage2/ReturnProcessor%3Fmethod%3D2'
+     . '%26origPage%3D' . $currentPath;
+
+    $variables['shibboleth_string'] = $shibbolethString;
+  }
+
 }
