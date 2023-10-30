@@ -1,0 +1,22 @@
+.front-page {
+  .hero {
+    background-color: var(--color-bus);
+    color: var(--hdbt-text-color--bus);
+
+    > .hds-koros {
+      color: $color-bus;
+    }
+  }
+
+  .hero__container {
+    color: var(---hdbt-text-color--bus);
+  }
+
+  .hero__image-container {
+    color: var(--color-bus);
+  }
+
+  .hero__arrow {
+    background-color: var(--hdbt-color-palette--primary);
+  }
+}
