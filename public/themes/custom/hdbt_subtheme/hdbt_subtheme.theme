@@ -12,6 +12,16 @@ use Drupal\Core\Url;
 /**
  * Implements hook_preprocess_HOOK().
  */
+function hdbt_subtheme_preprocess_html(&$variables): void {
+  $is_front = \Drupal::service('path.matcher')->isFrontPage();
+  if ($is_front) {
+    $variables['attributes']['class'][] = 'front-page';
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
 function hdbt_subtheme_preprocess_block(&$variables) {
   if (isset($variables['elements']['#id'])) {
     $variables['content']['#attributes']['block_id'] = $variables['elements']['#id'];
