@@ -121,7 +121,7 @@ if ($reverse_proxy_address = getenv('DRUPAL_REVERSE_PROXY_ADDRESS')) {
   }
   $settings['reverse_proxy'] = TRUE;
   $settings['reverse_proxy_addresses'] = $reverse_proxy_address;
-  $settings['reverse_proxy_trusted_headers'] = Request::HEADER_X_FORWARDED_ALL;
+  $settings['reverse_proxy_trusted_headers'] = Request::HEADER_X_FORWARDED_FOR | Request::HEADER_X_FORWARDED_HOST | Request::HEADER_X_FORWARDED_PORT | Request::HEADER_X_FORWARDED_PROTO;
   $settings['reverse_proxy_host_header'] = 'X_FORWARDED_HOST';
 }
 
@@ -310,6 +310,21 @@ if (
 
 $settings['is_azure'] = FALSE;
 
+/**
+ * Deployment preflight checks.
+ *
+ * @see docker/openshift/preflight/preflight.php for more information.
+ */
+$preflight_checks = [
+  'environmentVariables' => [
+    'DRUPAL_ROUTES',
+    'DRUPAL_DB_NAME',
+    'DRUPAL_DB_PASS',
+    'DRUPAL_DB_HOST',
+  ],
+  'additionalFiles' => [],
+];
+
 // Environment specific overrides.
 if (file_exists(__DIR__ . '/all.settings.php')) {
   // phpcs:ignore
@@ -349,3 +364,4 @@ if ($env = getenv('APP_ENV')) {
 if (empty($settings['deployment_identifier'])) {
   $settings['deployment_identifier'] = filemtime(__DIR__ . '/../../../composer.lock');
 }
+
