@@ -29,6 +29,7 @@ services:
       SIMPLETEST_BASE_URL: "http://app:8888"
       SIMPLETEST_DB: "mysql://drupal:drupal@db:3306/drupal"
       BROWSERTEST_OUTPUT_BASE_URL: "https://${DRUPAL_HOSTNAME}"
+      BROWSERTEST_OUTPUT_DIRECTORY: "/app/public/sites/default/files/simpletest"
       DRUPAL_VARNISH_HOST: "${COMPOSE_PROJECT_NAME}-varnish"
       DRUPAL_VARNISH_PORT: 6081
       REDIS_HOST: redis
@@ -54,16 +55,19 @@ services:
       - internal
   db:
     container_name: "${COMPOSE_PROJECT_NAME}-db"
-    image: druidfi/mariadb:10.11-drupal
+    image: mysql:8
     command:
       - --max_allowed_packet=512M
       - --character-set-server=utf8mb4
       - --collation-server=utf8mb4_swedish_ci
     environment:
-      MARIADB_AUTO_UPGRADE: "1"
-      MARIADB_INITDB_SKIP_TZINFO: "1"
+      MYSQL_DATABASE: drupal
+      MYSQL_USER: drupal
+      MYSQL_PASSWORD: drupal
+      MYSQL_INITDB_SKIP_TZINFO: 1
+      MYSQL_RANDOM_ROOT_PASSWORD: 1
     volumes:
-      - db_data:/var/lib/mysql
+      - db_volume:/var/lib/mysql
     ports:
       - 3306
     networks:
@@ -145,7 +149,7 @@ networks:
     external: true
 
 volumes:
-  db_data:
+  db_volume:
   ssh:
     name: stonehenge-ssh
     external: true
