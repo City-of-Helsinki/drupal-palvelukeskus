@@ -68,5 +68,15 @@ function hdbt_subtheme_preprocess_block__helfi_palvelukeskus_genesys(&$variables
 
     $variables['shibboleth_string'] = $shibbolethString;
   }
+}
 
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function hdbt_subtheme_preprocess_react_and_share(&$variables) : void {
+  // Set siteName drupalSetting here for AskEm block.
+  if (empty($variables['#attached']['drupalSettings']['siteName'])) {
+    $variables['#attached']['drupalSettings']['siteName'] = 'Palvelukeskus Helsinki';
+  }
 }
