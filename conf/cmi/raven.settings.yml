@@ -4,10 +4,10 @@ client_key: ''
 environment: ''
 release: ''
 log_levels:
-  1: 0
-  2: 0
-  3: 0
-  4: 0
+  1: 1
+  2: 2
+  3: 3
+  4: 4
   5: 0
   6: 0
   7: 0
