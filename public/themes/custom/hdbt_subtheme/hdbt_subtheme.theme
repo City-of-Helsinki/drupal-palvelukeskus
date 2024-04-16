@@ -70,7 +70,6 @@ function hdbt_subtheme_preprocess_block__helfi_palvelukeskus_genesys(&$variables
   }
 }
 
-
 /**
  * Implements hook_preprocess_HOOK().
  */
