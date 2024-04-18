@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Drupal\helfi_palvelukeskus_genesys\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
@@ -17,7 +19,7 @@ class GenesysBlock extends BlockBase {
   /**
    * {@inheritdoc}
    */
-  public function build() {
+  public function build() : array {
     return [
       '#attached' => [
         'library' => ['helfi_palvelukeskus_genesys/genesys'],
