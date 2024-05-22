@@ -1,10 +1,8 @@
-label: Media
 description: 'Etsi ja ylläpidä mediatiedostoja.'
 display:
   default:
     display_title: Oletus
     display_options:
-      title: Media
       fields:
         media_bulk_form:
           action_title: Toiminto
@@ -44,14 +42,14 @@ display:
             offset_label: Offset
       exposed_form:
         options:
-          submit_button: Suodatus
+          submit_button: Suodata
           reset_button_label: Palauta
           exposed_sorts_label: Lajittele
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Nousevasti
+          sort_desc_label: Laskevasti
       empty:
         area_text_custom:
-          content: 'Ei mediaa saatavilla.'
+          content: 'Mediatiedostoja ei ole saatavilla.'
       filters:
         name:
           expose:
@@ -72,8 +70,10 @@ display:
         langcode:
           expose:
             label: Kieli
+      title: Media
   media_page_list:
     display_title: Media
     display_options:
       menu:
         title: Media
+label: Media

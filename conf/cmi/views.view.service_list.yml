@@ -10,7 +10,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: MvCiaSrdVcljMT3wLlt5V47it0_DgXogcHidiHT4sug
+  default_config_hash: tYU3ozJEdEzgBo7vNnkTpTLq-d2yJOpuOWqzo8j_jl0
 id: service_list
 label: 'Service list'
 module: views
@@ -209,7 +209,6 @@ display:
           default_argument_type: fixed
           default_argument_options:
             argument: ''
-          default_argument_skip_url: false
           summary_options:
             base_path: ''
             count: true
@@ -360,20 +359,19 @@ display:
     display_plugin: block
     position: 1
     display_options:
-      display_extenders: {  }
       pager:
         type: none
         options:
           offset: 0
       defaults:
         pager: false
+      display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
-        - url.query_args
         - user
         - user.permissions
       tags: {  }
@@ -725,7 +723,6 @@ display:
           default_argument_type: fixed
           default_argument_options:
             argument: ''
-          default_argument_skip_url: false
           summary_options:
             base_path: ''
             count: true
@@ -803,7 +800,7 @@ display:
             operator: combine_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: combine
+            identifier: service-list-search
             required: false
             remember: false
             multiple: false

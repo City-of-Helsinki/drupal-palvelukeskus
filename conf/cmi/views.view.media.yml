@@ -448,6 +448,15 @@ display:
             date_format: short
             custom_date_format: ''
             timezone: ''
+            tooltip:
+              date_format: ''
+              custom_date_format: ''
+            time_diff:
+              enabled: false
+              future_format: '@interval hence'
+              past_format: '@interval ago'
+              granularity: 2
+              refresh: 60
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -533,13 +542,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Suodatus
+          submit_button: Suodata
           reset_button: false
           reset_button_label: Palauta
           exposed_sorts_label: Lajittele
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Nousevasti
+          sort_desc_label: Laskevasti
       access:
         type: perm
         options:
@@ -557,7 +566,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: true
-          content: 'Ei mediaa saatavilla.'
+          content: 'Mediatiedostoja ei ole saatavilla.'
           tokenize: false
       sorts:
         created:

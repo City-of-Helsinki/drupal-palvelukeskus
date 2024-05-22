@@ -7,6 +7,7 @@ dependencies:
 _core:
   default_config_hash: _YqHTUZ5t7SWq5sE0bJwbSNH9CaL_KIbwu-rURJ6sXo
 id: paragraphs_library_item.summary
-label: Summary
+label: Yhteenveto
+description: ''
 targetEntityType: paragraphs_library_item
 cache: true
