@@ -1,5 +1,12 @@
 parameters:
-  treatPhpDocTypesAsCertain: false
+  fileExtensions:
+      - php
+      - module
+      - install
+      - theme
+  paths:
+    - ./public/modules/custom
+    - ./public/themes/custom
   excludePaths:
-      - *Test.php
-      - *TestBase.php
+    - vendor
+  level: 3
