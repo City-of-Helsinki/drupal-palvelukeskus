@@ -9,7 +9,7 @@ dependencies:
 _core:
   default_config_hash: QvXv3a6WUyv4-xW6nELYHAg41Li9IxbbExB5j6Tkd4Y
 id: locked_content
-label: 'Lukitut sisällöt'
+label: 'Locked content'
 module: views
 description: ''
 tag: ''
@@ -18,11 +18,11 @@ base_field: nid
 display:
   default:
     id: default
-    display_title: Oletus
+    display_title: Master
     display_plugin: default
     position: 0
     display_options:
-      title: 'Lukitut sisällöt'
+      title: 'Locked content'
       fields:
         node_bulk_form:
           id: node_bulk_form
@@ -33,7 +33,7 @@ display:
           admin_label: ''
           entity_type: node
           plugin_id: node_bulk_form
-          label: 'Solmujen bulkkitoimintojen lomake'
+          label: 'Node operations bulk form'
           exclude: false
           alter:
             alter_text: false
@@ -74,7 +74,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          action_title: Toiminto
+          action_title: Action
           include_exclude: include
           selected_actions:
             - node_break_lock_action
@@ -88,7 +88,7 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: field
-          label: Otsikko
+          label: Title
           exclude: false
           alter:
             alter_text: false
@@ -135,7 +135,7 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: field
-          label: Sisältötyyppi
+          label: 'Content type'
           exclude: false
           alter:
             alter_text: false
@@ -179,7 +179,7 @@ display:
           click_sort_column: target_id
           type: entity_reference_label
           settings:
-            link: true
+            link: false
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -198,7 +198,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: date
-          label: 'Lukituksen ajankohta'
+          label: 'Lock Date/Time'
           exclude: false
           alter:
             alter_text: false
@@ -239,7 +239,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          date_format: fallback
+          date_format: long
           custom_date_format: ''
           timezone: ''
         name:
@@ -252,7 +252,7 @@ display:
           entity_type: user
           entity_field: name
           plugin_id: field
-          label: 'Lukituksen tekijä'
+          label: 'Lock owner'
           exclude: false
           alter:
             alter_text: false
@@ -296,7 +296,7 @@ display:
           click_sort_column: value
           type: user_name
           settings:
-            link_to_entity: true
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -322,7 +322,7 @@ display:
           admin_label: ''
           entity_type: node
           plugin_id: entity_operations
-          label: Toimenpiteet
+          label: Operations
           exclude: false
           alter:
             alter_text: false
@@ -374,24 +374,24 @@ display:
           tags:
             next: ››
             previous: ‹‹
-            first: '« Ensimmäinen'
-            last: 'Viimeinen »'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Merkintöjä sivua kohti'
+            items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Kaikki -'
+            items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
           quantity: 9
       exposed_form:
         type: basic
         options:
-          submit_button: Käytä
+          submit_button: Apply
           reset_button: false
-          reset_button_label: Palauta
-          exposed_sorts_label: Lajittele
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -412,7 +412,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: true
-          content: 'Lukittuja toimipisteitä ei ole.'
+          content: 'There is no content currently locked.'
           tokenize: false
       sorts:
         created:
@@ -487,7 +487,7 @@ display:
           exposed: true
           expose:
             operator_id: ''
-            label: Julkaisutila
+            label: 'Published status'
             description: ''
             use_operator: false
             operator: status_op
@@ -505,7 +505,7 @@ display:
               administrator: '0'
           is_grouped: true
           group_info:
-            label: Julkaisutila
+            label: 'Published status'
             description: ''
             identifier: status
             optional: true
@@ -515,12 +515,12 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items:
-              1:
-                title: Julkaistu
+              -
+                title: Published
                 operator: '='
                 value: '1'
-              2:
-                title: Julkaisematon
+              -
+                title: Unpublished
                 operator: '='
                 value: '0'
         type:
@@ -539,7 +539,7 @@ display:
           exposed: true
           expose:
             operator_id: type_op
-            label: Sisältötyyppi
+            label: 'Content type'
             description: ''
             use_operator: false
             operator: type_op
@@ -584,7 +584,7 @@ display:
           exposed: true
           expose:
             operator_id: title_op
-            label: Otsikko
+            label: Title
             description: ''
             use_operator: false
             operator: title_op
@@ -616,7 +616,7 @@ display:
       filter_groups:
         operator: AND
         groups:
-          1: AND
+          - AND
       style:
         type: table
         options:
@@ -698,6 +698,7 @@ display:
           admin_label: 'Lock owner'
           plugin_id: standard
           required: true
+      use_ajax: true
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -713,7 +714,7 @@ display:
       tags: {  }
   page_1:
     id: page_1
-    display_title: Sivu
+    display_title: Page
     display_plugin: page
     position: 1
     display_options:
@@ -722,7 +723,7 @@ display:
       path: admin/content/locked-content
       menu:
         type: none
-        title: 'Lukitut sisällöt'
+        title: 'Locked content'
         description: ''
         weight: 0
         expanded: false

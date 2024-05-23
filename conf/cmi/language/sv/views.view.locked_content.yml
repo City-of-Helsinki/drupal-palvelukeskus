@@ -25,7 +25,7 @@ display:
         node_bulk_form:
           action_title: Åtgärd
         title:
-          label: Title
+          label: Titel
           separator: ', '
         type:
           label: Innehållstyp
@@ -44,14 +44,12 @@ display:
             group_items:
               1:
                 title: Publicerad
-              2:
-                title: 'Ej publicerad'
         type:
           expose:
             label: Innehållstyp
         title:
           expose:
-            label: Title
+            label: Titel
       title: 'Låst innehåll'
   page_1:
     display_title: Sida

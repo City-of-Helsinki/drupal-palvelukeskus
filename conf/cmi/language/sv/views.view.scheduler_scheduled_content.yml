@@ -1,5 +1,5 @@
 label: 'Schemalagt innehåll'
-description: 'Find and manage scheduled content.'
+description: 'Hitta och hantera schemalagt innehåll.'
 display:
   default:
     display_options:
@@ -21,7 +21,7 @@ display:
         node_bulk_form:
           action_title: Åtgärd
         title:
-          label: Title
+          label: Titel
           separator: ', '
         type:
           label: Innehållstyp
@@ -46,7 +46,7 @@ display:
       filters:
         title:
           expose:
-            label: Title
+            label: Titel
         type:
           expose:
             label: Innehållstyp
@@ -66,7 +66,7 @@ display:
       title: 'Schemalagt innehåll'
       empty:
         area_text_custom:
-          content: 'No scheduled content.'
+          content: 'Inget schemalagt innehåll.'
     display_title: Förvald
   overview:
     display_options:

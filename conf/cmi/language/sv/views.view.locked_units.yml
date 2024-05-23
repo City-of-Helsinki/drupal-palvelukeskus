@@ -7,7 +7,7 @@ display:
           label: Massuppdatera
           action_title: Åtgärd
         name:
-          label: Title
+          label: Titel
           separator: ', '
         name_1:
           label: 'Lås ägare'
@@ -38,6 +38,6 @@ display:
       filters:
         name:
           expose:
-            label: Title
+            label: Titel
   locked_units_block:
     display_title: Block
