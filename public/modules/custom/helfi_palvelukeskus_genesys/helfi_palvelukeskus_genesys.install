@@ -1,7 +1,8 @@
 <?php
 
 /**
- * @file Install hooks.
+ * @file
+ * Install hooks.
  */
 
 declare(strict_types=1);
