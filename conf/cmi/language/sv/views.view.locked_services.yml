@@ -34,7 +34,7 @@ display:
           sort_asc_label: Stigande
           sort_desc_label: Fallande
           reset_button_label: Återställ
-          exposed_sorts_label: Sort
+          exposed_sorts_label: 'Sortera efter'
       filters:
         name:
           expose:
