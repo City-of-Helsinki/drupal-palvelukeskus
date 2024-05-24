@@ -17,5 +17,4 @@ genesys:
     - core/drupal
     - core/drupalSettings
     - core/jquery
-    - core/jquery.once
     - helfi_palvelukeskus_genesys/gcb

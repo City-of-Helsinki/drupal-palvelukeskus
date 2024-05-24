@@ -179,7 +179,7 @@ display:
           click_sort_column: target_id
           type: entity_reference_label
           settings:
-            link: true
+            link: false
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -239,7 +239,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          date_format: fallback
+          date_format: long
           custom_date_format: ''
           timezone: ''
         name:
@@ -296,7 +296,7 @@ display:
           click_sort_column: value
           type: user_name
           settings:
-            link_to_entity: true
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -515,11 +515,11 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items:
-              1:
+              -
                 title: Published
                 operator: '='
                 value: '1'
-              2:
+              -
                 title: Unpublished
                 operator: '='
                 value: '0'
@@ -616,7 +616,7 @@ display:
       filter_groups:
         operator: AND
         groups:
-          1: AND
+          - AND
       style:
         type: table
         options:
@@ -698,6 +698,7 @@ display:
           admin_label: 'Lock owner'
           plugin_id: standard
           required: true
+      use_ajax: true
       header: {  }
       footer: {  }
       display_extenders: {  }

@@ -3,24 +3,24 @@ content:
     settings:
       sort_order:
         ESERVICE:
-          label: E-service
+          label: 'Sähköinen palvelu'
         CHAT:
           label: Chat
         EMAIL:
-          label: Sähköposti
+          label: 'Lähetä sivu sähköpostitse'
         TELEPHONE:
           label: Puhelin
         PRINTABLE_FORM:
           label: Lomake
         LOCAL:
-          label: 'Local service'
+          label: Asiakaspalvelu
         SMS:
-          label: SMS
+          label: Tekstiviesti
         WEBPAGE:
-          label: Webpage
+          label: Nettisivu
         MAIL:
-          label: 'Postal mail'
+          label: Posti
         TELEFAX:
-          label: Telefax
+          label: Faksi
         OFFICE:
           label: Palvelupiste

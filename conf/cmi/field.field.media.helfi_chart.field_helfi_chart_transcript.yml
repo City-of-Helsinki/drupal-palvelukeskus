@@ -13,7 +13,7 @@ third_party_settings:
     allowed_formats:
       - minimal
 _core:
-  default_config_hash: 7il4Dro949nSDjskG89Sqmxr_vsg-wbwOFLYNV0KnmY
+  default_config_hash: 59V-xqzI9H6QWi8JxWcfumBdgctyJuIKKQwy-fIz8xA
 id: media.helfi_chart.field_helfi_chart_transcript
 field_name: field_helfi_chart_transcript
 entity_type: media
@@ -24,5 +24,6 @@ required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
+settings:
+  allowed_formats: {  }
 field_type: text_long

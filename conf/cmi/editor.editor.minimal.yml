@@ -1,41 +1,124 @@
-uuid: be40d82b-c537-40a9-bc75-30fb916139ff
+uuid: ff9484cd-510a-49ed-bd49-9217f42d530f
 langcode: en
 status: true
 dependencies:
   config:
     - filter.format.minimal
   module:
-    - ckeditor
+    - ckeditor5
 _core:
-  default_config_hash: UYVamJgeMVQeM3VYumbShc-tGJoYe4RhrXqiL_tJw4c
+  default_config_hash: 5-ooLNHf6seCXcxTq7GgRliZT6bSLCwAXekmT61kdqw
 format: minimal
-editor: ckeditor
+editor: ckeditor5
 settings:
   toolbar:
-    rows:
-      -
-        -
-          name: Formatting
-          items:
-            - Bold
-            - Italic
-        -
-          name: Links
-          items:
-            - DrupalLink
-            - DrupalUnlink
-        -
-          name: Lists
-          items:
-            - BulletedList
-            - NumberedList
-        -
-          name: Tools
-          items:
-            - language_selector
-            - Source
+    items:
+      - bold
+      - italic
+      - '|'
+      - bulletedList
+      - numberedList
+      - '|'
+      - link
+      - helfiLanguageSelector
+      - '|'
+      - sourceEditing
   plugins:
-    drupallink:
+    ckeditor5_list:
+      properties:
+        reversed: false
+        startIndex: true
+      multiBlock: true
+    ckeditor5_paste_filter_pasteFilter:
+      enabled: true
+      filters:
+        -
+          enabled: true
+          weight: 0
+          search: '<o:p><\/o:p>'
+          replace: ''
+        -
+          enabled: true
+          weight: 1
+          search: '(<[^>]*) (style="[^"]*")'
+          replace: $1
+        -
+          enabled: true
+          weight: 2
+          search: '(<[^>]*) (face="[^"]*")'
+          replace: $1
+        -
+          enabled: true
+          weight: 3
+          search: '(<[^>]*) (class="[^"]*")'
+          replace: $1
+        -
+          enabled: true
+          weight: 4
+          search: '(<[^>]*) (valign="[^"]*")'
+          replace: $1
+        -
+          enabled: true
+          weight: 5
+          search: '<font[^>]*>'
+          replace: ''
+        -
+          enabled: true
+          weight: 6
+          search: '<\/font>'
+          replace: ''
+        -
+          enabled: true
+          weight: 7
+          search: '<span(?![^>]*\b(?:dir|lang)="[^"]*")[^>]*>(.*?)<\/span>'
+          replace: $1
+        -
+          enabled: true
+          weight: 8
+          search: '<p><span lang="[^"]*"><\/span><\/p>'
+          replace: ''
+        -
+          enabled: true
+          weight: 9
+          search: '<span lang="[^"]*"><\/span>'
+          replace: ''
+        -
+          enabled: true
+          weight: 10
+          search: '<p>&nbsp;<\/p>'
+          replace: ''
+        -
+          enabled: true
+          weight: 11
+          search: '<p><\/p>'
+          replace: ''
+        -
+          enabled: true
+          weight: 12
+          search: '<b><\/b>'
+          replace: ''
+        -
+          enabled: true
+          weight: 13
+          search: '<i><\/i>'
+          replace: ''
+        -
+          enabled: true
+          weight: 14
+          search: '<a name="OLE_LINK[^"]*">(.*?)<\/a>'
+          replace: $1
+        -
+          enabled: true
+          weight: 15
+          search: '<a name="[^"]*">(.*?)<\/a>'
+          replace: $1
+    ckeditor5_sourceEditing:
+      allowed_tags:
+        - '<p data-chat-trigger>'
+    helfi_ckeditor_helfi_link:
+      helfi_link_attributes:
+        - '<a data-hds-icon-start data-is-external data-protocol data-hds-component data-hds-variant rel target="_blank">'
+    linkit_extension:
       linkit_enabled: true
       linkit_profile: helfi
 image_upload:

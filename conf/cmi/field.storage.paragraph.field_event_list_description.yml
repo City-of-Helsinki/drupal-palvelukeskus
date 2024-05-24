@@ -6,7 +6,7 @@ dependencies:
     - paragraphs
     - text
 _core:
-  default_config_hash: XT3rdLmDpDOSog8-dJ5PcIVRB8LbZ_uzZeRTU-anZS0
+  default_config_hash: AuF7n6Boo2ZqTb2fYPorDvEJsCdHJrEAwfKWAXQxWRU
 id: paragraph.field_event_list_description
 field_name: field_event_list_description
 entity_type: paragraph

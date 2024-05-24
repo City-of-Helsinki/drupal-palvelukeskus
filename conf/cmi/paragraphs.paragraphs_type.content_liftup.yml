@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: ONSzgYJ_Jc8pZ002ZLaFDdkbCXm0lKyjjWMpiEYA3v8
+  default_config_hash: tTz4Wq1_kThrEx55ZD3FMXoMJJbBHnwZnHtvRV1FXf4
 id: content_liftup
 label: 'Content liftup'
 icon_uuid: null

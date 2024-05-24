@@ -11,7 +11,7 @@ dependencies:
   module:
     - text
 _core:
-  default_config_hash: z5HcA-kCryhCEDDUh3GMvbVm_xuff7CohDimxV11670
+  default_config_hash: q5ty6TL6Gz4mjHihvReIbKIyYd4JuJ4WDH0emJ8tEkI
 id: paragraph.chart.default
 targetEntityType: paragraph
 bundle: chart
