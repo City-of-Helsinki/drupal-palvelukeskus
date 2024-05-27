@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Install hooks.
+ */
+
+declare(strict_types=1);
+
+/**
+ * Fix corrupted keyValue at locale.translation_status.
+ */
+function helfi_palvelukeskus_genesys_update_9000() : void {
+  \Drupal::moduleHandler()->loadInclude('locale', 'bulk.inc');
+  $projects = ['helfi_toc', 'helfi_tpr_config'];
+
+  // Forces drush locale:check for projects.
+  foreach ($projects as $project) {
+    locale_translation_status_delete_projects([$project]);
+    locale_translate_delete_translation_files([$project]);
+  }
+}

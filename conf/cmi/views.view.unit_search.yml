@@ -9,7 +9,7 @@ dependencies:
     - helfi_tpr
     - user
 _core:
-  default_config_hash: mwuTSnSRTePqNG6WFWBI9ajFxnho8CH-6sfyfJnDr0E
+  default_config_hash: ILA5x_MmTaGv2HHx487USFFmiMtmmkGyp24bT1Y_V84
 id: unit_search
 label: 'Unit search'
 module: views
@@ -286,7 +286,7 @@ display:
         type: full
         options:
           offset: 0
-          items_per_page: 5
+          items_per_page: 15
           total_pages: null
           id: 0
           tags:
@@ -306,7 +306,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Use
+          submit_button: Search
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: Sort
@@ -385,7 +385,6 @@ display:
           title: ''
           default_argument_type: node
           default_argument_options: {  }
-          default_argument_skip_url: false
           summary_options:
             base_path: ''
             count: true

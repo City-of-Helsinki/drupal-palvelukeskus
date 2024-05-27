@@ -25,9 +25,6 @@ display:
         tpr_service_bulk_form:
           label: Massapäivitys
           action_title: Toiminto
-        id:
-          label: ID
-          separator: ', '
         name:
           label: Nimi
           separator: ', '
@@ -45,6 +42,9 @@ display:
           separator: ', '
         operations:
           label: Toimenpiteet
+        id:
+          label: ID
+          separator: ', '
       filters:
         combine:
           expose:
@@ -60,5 +60,6 @@ display:
         area:
           content:
             value: 'Ei tuloksia.'
+            format: plain_text
   page_1:
     display_title: Sivu

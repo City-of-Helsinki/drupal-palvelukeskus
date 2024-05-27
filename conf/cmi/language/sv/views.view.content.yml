@@ -7,7 +7,7 @@ display:
       title: Innehåll
       fields:
         title:
-          label: Title
+          label: Titel
         type:
           label: Innehållstyp
           separator: ', '
@@ -42,7 +42,7 @@ display:
       filters:
         title:
           expose:
-            label: Title
+            label: Titel
         type:
           expose:
             label: Innehållstyp
@@ -54,8 +54,6 @@ display:
             group_items:
               1:
                 title: Publicerad
-              2:
-                title: 'Ej publicerad'
         langcode:
           expose:
             label: Språk

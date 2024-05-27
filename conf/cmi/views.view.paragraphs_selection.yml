@@ -179,8 +179,8 @@ display:
           reset_button_label: Palauta
           exposed_sorts_label: Lajittele
           expose_sort_order: true
-          sort_asc_label: Nousevasti
-          sort_desc_label: Laskevasti
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       access:
         type: none
         options: {  }
