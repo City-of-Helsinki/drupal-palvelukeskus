@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e743eba7232c145e97f280d663efcc3c",
+    "content-hash": "7bdd5d17d866ccf76d0170bd8dce0eb6",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4119,47 +4119,6 @@
                 "issues": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/issues"
             },
             "time": "2024-06-19T10:04:46+00:00"
-        },
-        {
-            "name": "drupal/helfi_proxy",
-            "version": "2.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-proxy.git",
-                "reference": "cae301f5f3b2d5a2dc723cbc03d6cc9a47bec6f7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-proxy/zipball/cae301f5f3b2d5a2dc723cbc03d6cc9a47bec6f7",
-                "reference": "cae301f5f3b2d5a2dc723cbc03d6cc9a47bec6f7",
-                "shasum": ""
-            },
-            "require": {
-                "drupal/helfi_api_base": "*",
-                "drupal/purge": "^3.0",
-                "drupal/varnish_purge": "^2.1",
-                "ext-dom": "*",
-                "ext-libxml": "*",
-                "php": "^8.0"
-            },
-            "conflict": {
-                "drupal/helfi_tunnistamo": "<=2.2.1"
-            },
-            "require-dev": {
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
-                "drupal/coder": "^8.3",
-                "phpspec/prophecy-phpunit": "^2"
-            },
-            "type": "drupal-module",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "description": "Provides various fixes so we can serve multiple Drupal instances in one domain.",
-            "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-proxy/tree/2.3.0",
-                "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-proxy/issues"
-            },
-            "time": "2022-11-08T11:03:23+00:00"
         },
         {
             "name": "drupal/helfi_tpr",
