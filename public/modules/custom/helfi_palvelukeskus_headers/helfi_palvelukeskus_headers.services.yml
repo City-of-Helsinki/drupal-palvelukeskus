@@ -1,0 +1,4 @@
+services:
+  Drupal\helfi_palvelukeskus_headers\EventSubscriber\RobotsResponseSubscriber:
+    tags:
+      - { name: event_subscriber }
