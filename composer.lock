@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e743eba7232c145e97f280d663efcc3c",
+    "content-hash": "c53130a9f84918184c980746591a2fe7",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3211,60 +3211,6 @@
             }
         },
         {
-            "name": "drupal/externalauth",
-            "version": "2.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/externalauth.git",
-                "reference": "2.0.5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/externalauth-2.0.5.zip",
-                "reference": "2.0.5",
-                "shasum": "7c262c7ca20d26aae45896daee4249e47b637abc"
-            },
-            "require": {
-                "drupal/core": "^9 || ^10"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "2.0.5",
-                    "datestamp": "1708329378",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Sven Decabooter",
-                    "homepage": "https://www.drupal.org/u/svendecabooter",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "snufkin",
-                    "homepage": "https://www.drupal.org/user/58645"
-                },
-                {
-                    "name": "svendecabooter",
-                    "homepage": "https://www.drupal.org/user/35369"
-                }
-            ],
-            "description": "Helper module to authenticate users using an external site / service and storing identification details",
-            "homepage": "https://drupal.org/project/externalauth",
-            "support": {
-                "source": "https://git.drupalcode.org/project/externalauth",
-                "issues": "https://www.drupal.org/project/issues/externalauth"
-            }
-        },
-        {
             "name": "drupal/field_group",
             "version": "3.4.0",
             "source": {
@@ -4166,47 +4112,6 @@
             "time": "2024-06-26T11:20:54+00:00"
         },
         {
-            "name": "drupal/helfi_proxy",
-            "version": "2.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-proxy.git",
-                "reference": "cae301f5f3b2d5a2dc723cbc03d6cc9a47bec6f7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-proxy/zipball/cae301f5f3b2d5a2dc723cbc03d6cc9a47bec6f7",
-                "reference": "cae301f5f3b2d5a2dc723cbc03d6cc9a47bec6f7",
-                "shasum": ""
-            },
-            "require": {
-                "drupal/helfi_api_base": "*",
-                "drupal/purge": "^3.0",
-                "drupal/varnish_purge": "^2.1",
-                "ext-dom": "*",
-                "ext-libxml": "*",
-                "php": "^8.0"
-            },
-            "conflict": {
-                "drupal/helfi_tunnistamo": "<=2.2.1"
-            },
-            "require-dev": {
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
-                "drupal/coder": "^8.3",
-                "phpspec/prophecy-phpunit": "^2"
-            },
-            "type": "drupal-module",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "description": "Provides various fixes so we can serve multiple Drupal instances in one domain.",
-            "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-proxy/tree/2.3.0",
-                "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-proxy/issues"
-            },
-            "time": "2022-11-08T11:03:23+00:00"
-        },
-        {
             "name": "drupal/helfi_tpr",
             "version": "2.3.8",
             "source": {
@@ -4247,39 +4152,6 @@
                 "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-tpr/issues"
             },
             "time": "2024-03-25T06:40:36+00:00"
-        },
-        {
-            "name": "drupal/helfi_tunnistamo",
-            "version": "2.2.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-tunnistamo.git",
-                "reference": "17badf64ebfcc6a30458634b19a4387cb4ce3d34"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-tunnistamo/zipball/17badf64ebfcc6a30458634b19a4387cb4ce3d34",
-                "reference": "17badf64ebfcc6a30458634b19a4387cb4ce3d34",
-                "shasum": ""
-            },
-            "require": {
-                "drupal/helfi_api_base": "*",
-                "drupal/openid_connect": "^3.0"
-            },
-            "require-dev": {
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
-                "drupal/coder": "^8.3"
-            },
-            "type": "drupal-module",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "description": "Tunnistamo integration",
-            "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-tunnistamo/tree/2.2.4",
-                "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-tunnistamo/issues"
-            },
-            "time": "2023-05-17T11:53:24+00:00"
         },
         {
             "name": "drupal/image_style_quality",
@@ -5031,73 +4903,6 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/oembed_providers",
                 "issues": "https://www.drupal.org/project/issues/oembed_providers"
-            }
-        },
-        {
-            "name": "drupal/openid_connect",
-            "version": "3.0.0-alpha3",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/openid_connect.git",
-                "reference": "3.0.0-alpha3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/openid_connect-3.0.0-alpha3.zip",
-                "reference": "3.0.0-alpha3",
-                "shasum": "002616dc2bfeb6b23204297e77d1f7a5369e69b3"
-            },
-            "require": {
-                "drupal/core": "^9.3 || ^10",
-                "drupal/externalauth": "^2.0",
-                "ext-json": "*",
-                "php": ">=7.1.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "3.0.0-alpha3",
-                    "datestamp": "1710708951",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "bojanz",
-                    "homepage": "https://www.drupal.org/user/86106"
-                },
-                {
-                    "name": "jcnventura",
-                    "homepage": "https://www.drupal.org/user/122464"
-                },
-                {
-                    "name": "pfrilling",
-                    "homepage": "https://www.drupal.org/user/169695"
-                },
-                {
-                    "name": "pjcdawkins",
-                    "homepage": "https://www.drupal.org/user/1025236"
-                },
-                {
-                    "name": "sanduhrs",
-                    "homepage": "https://www.drupal.org/user/28074"
-                }
-            ],
-            "description": "A pluggable client implementation for the OpenID Connect protocol.",
-            "homepage": "https://www.drupal.org/project/openid_connect",
-            "keywords": [
-                "Drupal"
-            ],
-            "support": {
-                "source": "https://git.drupalcode.org/project/openid_connect",
-                "issues": "https://www.drupal.org/project/issues/openid_connect"
             }
         },
         {
