@@ -364,6 +364,8 @@ display:
           empty_zero: false
           hide_alter_empty: true
           destination: false
+        langcode_1:
+          label: 'Sisällön kieli'
       pager:
         type: full
         options:
@@ -385,6 +387,7 @@ display:
             offset: false
             offset_label: Offset
           quantity: 9
+          pagination_heading_level: h4
       exposed_form:
         type: basic
         options:

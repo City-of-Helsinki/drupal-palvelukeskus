@@ -538,6 +538,7 @@ display:
             previous: '‹ previous'
             first: '« first'
             last: 'last »'
+          pagination_heading_level: h4
       exposed_form:
         type: basic
         options:
@@ -1107,6 +1108,7 @@ display:
             roles: {  }
           break_phrase: false
           not: false
+          target_entity_type_id: user
       defaults:
         empty: false
         access: true
