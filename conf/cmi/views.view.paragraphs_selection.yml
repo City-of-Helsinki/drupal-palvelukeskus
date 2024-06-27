@@ -17,7 +17,7 @@ base_field: id
 display:
   default:
     id: default
-    display_title: Oletus
+    display_title: Default
     display_plugin: default
     position: 0
     display_options:
@@ -236,7 +236,7 @@ display:
           exposed: true
           expose:
             operator_id: label_op
-            label: Tunnus
+            label: Label
             description: ''
             use_operator: false
             operator: label_op
@@ -311,7 +311,7 @@ display:
       tags: {  }
   entity_reference:
     id: entity_reference
-    display_title: Entiteettiviittaus
+    display_title: 'Entity reference'
     display_plugin: entity_reference
     position: 1
     display_options:
