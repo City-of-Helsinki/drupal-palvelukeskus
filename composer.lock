@@ -1852,27 +1852,27 @@
         },
         {
             "name": "drupal/config_rewrite",
-            "version": "1.5.0",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/config_rewrite.git",
-                "reference": "8.x-1.5"
+                "reference": "8.x-1.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_rewrite-8.x-1.5.zip",
-                "reference": "8.x-1.5",
-                "shasum": "c4740c74fc6e48069cada1fab4c809f1b99d31ac"
+                "url": "https://ftp.drupal.org/files/projects/config_rewrite-8.x-1.6.zip",
+                "reference": "8.x-1.6",
+                "shasum": "caa66f28c03e680ce5163c2924733f75913231ad"
             },
             "require": {
-                "drupal/core": "^8.6 || ^9 || ^10",
+                "drupal/core": "^8.6 || ^9 || ^10 || ^11",
                 "php": ">=7.1"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.5",
-                    "datestamp": "1659538494",
+                    "version": "8.x-1.6",
+                    "datestamp": "1719490162",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1885,9 +1885,9 @@
             ],
             "authors": [
                 {
-                    "name": "Brant Wynn (brantwynn)",
-                    "homepage": "https://www.drupal.org/u/brantwynn",
-                    "role": "Maintainer"
+                    "name": "Diana Wynn (saltednut)",
+                    "homepage": "https://www.drupal.org/u/saltednut",
+                    "role": "Co-Maintainer"
                 },
                 {
                     "name": "saltednut",
@@ -2532,26 +2532,26 @@
         },
         {
             "name": "drupal/easy_breadcrumb",
-            "version": "2.0.6",
+            "version": "2.0.7",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/easy_breadcrumb.git",
-                "reference": "2.0.6"
+                "reference": "2.0.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/easy_breadcrumb-2.0.6.zip",
-                "reference": "2.0.6",
-                "shasum": "622f31fb071dea25735cfc4eaab4cf96bde917ab"
+                "url": "https://ftp.drupal.org/files/projects/easy_breadcrumb-2.0.7.zip",
+                "reference": "2.0.7",
+                "shasum": "a17524ffc2c76bc0aedb04116c3647dc2025e762"
             },
             "require": {
-                "drupal/core": "^9.2 || ^10"
+                "drupal/core": "^9.2 || ^10 || ^11"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.6",
-                    "datestamp": "1707084295",
+                    "version": "2.0.7",
+                    "datestamp": "1719427042",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2598,12 +2598,20 @@
                     "homepage": "https://www.drupal.org/user/3094661"
                 },
                 {
+                    "name": "rakesh.gectcr",
+                    "homepage": "https://www.drupal.org/user/1177822"
+                },
+                {
                     "name": "renatog",
                     "homepage": "https://www.drupal.org/user/3326031"
                 },
                 {
                     "name": "sonemonu",
                     "homepage": "https://www.drupal.org/user/1667988"
+                },
+                {
+                    "name": "spuky",
+                    "homepage": "https://www.drupal.org/user/209353"
                 },
                 {
                     "name": "tatarbj",
@@ -3692,16 +3700,16 @@
         },
         {
             "name": "drupal/hdbt",
-            "version": "6.5.27",
+            "version": "6.5.28",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-hdbt.git",
-                "reference": "6ea70e083d02bec8fb622d686d47943c819f3fa1"
+                "reference": "bdd7941c52e24ae145eac95b44e7cfb5670394ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/6ea70e083d02bec8fb622d686d47943c819f3fa1",
-                "reference": "6ea70e083d02bec8fb622d686d47943c819f3fa1",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/bdd7941c52e24ae145eac95b44e7cfb5670394ce",
+                "reference": "bdd7941c52e24ae145eac95b44e7cfb5670394ce",
                 "shasum": ""
             },
             "require": {
@@ -3719,10 +3727,10 @@
                 "Drupal"
             ],
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/6.5.27",
+                "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/6.5.28",
                 "issues": "https://github.com/City-of-Helsinki/drupal-hdbt/issues"
             },
-            "time": "2024-06-20T12:41:39+00:00"
+            "time": "2024-06-25T09:50:40+00:00"
         },
         {
             "name": "drupal/hdbt_admin",
@@ -3983,16 +3991,16 @@
         },
         {
             "name": "drupal/helfi_platform_config",
-            "version": "4.4.1",
+            "version": "4.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config.git",
-                "reference": "682707108c1afbbba8f6d91667d5c209f8b6ef2a"
+                "reference": "758958ecb63cbcb93b0a72cdcd532ea1af2cc90b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/682707108c1afbbba8f6d91667d5c209f8b6ef2a",
-                "reference": "682707108c1afbbba8f6d91667d5c209f8b6ef2a",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/758958ecb63cbcb93b0a72cdcd532ea1af2cc90b",
+                "reference": "758958ecb63cbcb93b0a72cdcd532ea1af2cc90b",
                 "shasum": ""
             },
             "require": {
@@ -4106,10 +4114,10 @@
             ],
             "description": "HELfi platform config",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/4.4.1",
+                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/4.4.2",
                 "issues": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/issues"
             },
-            "time": "2024-06-26T11:20:54+00:00"
+            "time": "2024-06-28T06:16:07+00:00"
         },
         {
             "name": "drupal/helfi_tpr",
