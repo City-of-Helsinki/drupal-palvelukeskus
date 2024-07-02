@@ -22,6 +22,9 @@ display:
           label: Uppdaterad
         operations:
           label: Funktioner
+        langcode:
+          label: Språk
+          separator: ', '
       pager:
         options:
           tags:
