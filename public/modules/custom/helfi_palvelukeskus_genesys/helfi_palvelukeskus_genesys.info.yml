@@ -1,7 +1,5 @@
-name: 'Helfi Palvelukeskus Genesys'
+name: 'Helfi Palvelukeskus Genesys (placeholder)'
 type: module
-description: 'Integrates genesys chat'
+description: 'Placeholder for uninstalled module.'
 package: Custom
 core_version_requirement: ^9 ||^10
-'interface translation project': helfi_palvelukeskus_genesys
-'interface translation server pattern': modules/custom/helfi_palvelukeskus_genesys/translations/%language.po
