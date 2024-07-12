@@ -58,21 +58,6 @@ function hdbt_subtheme_theme_suggestions_menu_alter(&$suggestions, $variables) {
 /**
  * Implements hook_preprocess_HOOK().
  */
-function hdbt_subtheme_preprocess_block__helfi_palvelukeskus_genesys(&$variables) {
-  $currentPath = Url::fromRoute('<current>', [], ['absolute' => TRUE])->toString();
-
-  if ($currentPath) {
-    $shibbolethString = 'https://asiointi.hel.fi/chat/tunnistus/Shibboleth.sso/KAPALogin?'
-     . 'target=https://asiointi.hel.fi/chat/tunnistus/chat2/MagicPage2/ReturnProcessor%3Fmethod%3D2'
-     . '%26origPage%3D' . $currentPath;
-
-    $variables['shibboleth_string'] = $shibbolethString;
-  }
-}
-
-/**
- * Implements hook_preprocess_HOOK().
- */
 function hdbt_subtheme_preprocess_react_and_share(&$variables) : void {
   // Set siteName drupalSetting here for AskEm block.
   if (empty($variables['#attached']['drupalSettings']['siteName'])) {
