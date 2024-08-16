@@ -1,0 +1,21 @@
+uuid: 6a06d34c-761a-40d0-a594-144d8b65ab7d
+langcode: en
+status: true
+dependencies:
+  module:
+    - helfi_etusivu_entities
+  theme:
+    - hdbt_subtheme
+id: announcements
+theme: hdbt_subtheme
+region: before_content
+weight: -15
+provider: helfi_node_announcement
+plugin: announcements
+settings:
+  id: announcements
+  label: Announcements
+  label_display: ''
+  provider: helfi_node_announcement
+  use_remote_entities: true
+visibility: {  }
