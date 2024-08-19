@@ -1,7 +1,10 @@
 uuid: 93b424fc-2664-44de-9063-e94360210c3a
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  enforced:
+    module:
+      - paragraphs_library
 _core:
   default_config_hash: OJUwL6xTTiHbXZy10swc5Fckkr7qhSm4b0nK3326LO8
 id: from_library
