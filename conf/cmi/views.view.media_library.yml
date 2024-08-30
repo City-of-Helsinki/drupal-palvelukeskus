@@ -483,6 +483,7 @@ display:
         - 'url.query_args:sort_by'
         - user
         - user.permissions
+        - 'languages:language_content'
       tags: {  }
   page:
     id: page
@@ -1337,7 +1338,7 @@ display:
             image_link: ''
             image_style: media_library
             image_loading:
-              attribute: lazy
+              attribute: eager
         name:
           id: name
           table: media_field_data
