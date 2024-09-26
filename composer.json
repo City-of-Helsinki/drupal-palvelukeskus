@@ -51,7 +51,8 @@
             "php-http/discovery": true
         },
         "audit": {
-            "abandoned": "report"
+            "abandoned": "report",
+            "ignore": ["GHSA-mg8j-w93w-xjgc"]
         }
     },
     "extra": {
