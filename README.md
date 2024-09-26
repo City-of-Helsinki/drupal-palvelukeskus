@@ -7,6 +7,8 @@ Description of your project.
 Env | Branch | Drush alias | URL
 --- | ------ | ----------- | ---
 development | main | - | https:///drupal-palvelukeskus.docker.so/
+test        | dev  | - | https://helfi-palvelukeskus-drupal-test.agw.arodevtest.hel.fi
+production  | prod | - | https://palvelukeskus.hel.fi/fi
 
 ## Requirements
 
