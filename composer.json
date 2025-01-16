@@ -18,6 +18,7 @@
         "drupal/helfi_azure_fs": "^2.0",
         "drupal/helfi_drupal_tools": "dev-main",
         "drupal/helfi_platform_config": "^4.0",
+        "drupal/helfi_tunnistamo": "^3.0",
         "drupal/purge": "^3.0",
         "drupal/varnish_purge": "^2.1",
         "drush/drush": "^12"
@@ -37,12 +38,13 @@
         "optimize-autoloader": true,
         "sort-packages": true,
         "allow-plugins": {
-            "dealerdirect/phpcodesniffer-composer-installer": true,
             "composer/installers": true,
             "cweagans/composer-patches": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
             "drupal/core-composer-scaffold": true,
             "php-http/discovery": true,
-            "phpstan/extension-installer": true
+            "phpstan/extension-installer": true,
+            "tbachert/spi": false
         },
         "audit": {
             "abandoned": "report",
