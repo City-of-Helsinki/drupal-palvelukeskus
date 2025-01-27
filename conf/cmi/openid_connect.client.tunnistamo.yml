@@ -10,13 +10,13 @@ id: tunnistamo
 label: Tunnistamo
 plugin: tunnistamo
 settings:
-  client_scopes: 'openid,email'
-  environment_url: ''
-  auto_login: 0
-  client_roles: {  }
-  client_id: false
-  client_secret: false
+  client_id: ''
+  client_secret: ''
   iss_allowed_domains: ''
   is_production: 0
-  ad_roles: {  }
+  auto_login: 0
+  environment_url: ''
+  client_scopes: 'openid,email'
+  client_roles: {  }
   loa_roles: {  }
+  ad_roles: {  }
