@@ -14,6 +14,9 @@ $additionalEnvVars = [
   'REDIS_PASSWORD',
   'SENTRY_DSN',
   'SENTRY_ENVIRONMENT',
+  'TUNNISTAMO_CLIENT_ID',
+  'TUNNISTAMO_CLIENT_SECRET',
+  'TUNNISTAMO_ENVIRONMENT_URL',
 ];
 foreach ($additionalEnvVars as $var) {
   $preflight_checks['environmentVariables'][] = $var;

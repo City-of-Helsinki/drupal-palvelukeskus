@@ -1,0 +1,22 @@
+uuid: 64412df8-6368-42f5-9cee-41204fc7d83f
+langcode: en
+status: true
+dependencies:
+  module:
+    - helfi_tunnistamo
+_core:
+  default_config_hash: 7BYGKgNOv4aFrezTKEJIuJRnekz5PidyJHByF88Gux4
+id: tunnistamo
+label: Tunnistamo
+plugin: tunnistamo
+settings:
+  client_id: ''
+  client_secret: ''
+  iss_allowed_domains: ''
+  is_production: 0
+  auto_login: 0
+  environment_url: ''
+  client_scopes: 'openid,email'
+  client_roles: {  }
+  loa_roles: {  }
+  ad_roles: {  }
