@@ -3942,17 +3942,17 @@
         },
         {
             "name": "drupal/gin",
-            "version": "4.0.2",
+            "version": "4.0.3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gin.git",
-                "reference": "4.0.2"
+                "reference": "4.0.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/gin-4.0.2.zip",
-                "reference": "4.0.2",
-                "shasum": "501f167bd7009cffa29848a918b3982cb0a8245b"
+                "url": "https://ftp.drupal.org/files/projects/gin-4.0.3.zip",
+                "reference": "4.0.3",
+                "shasum": "c8b80935b558985f88ee7d5fa7dbb25ec4024dd0"
             },
             "require": {
                 "drupal/core": "^10 || ^11",
@@ -3961,8 +3961,8 @@
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "4.0.2",
-                    "datestamp": "1735405135",
+                    "version": "4.0.3",
+                    "datestamp": "1739275596",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4125,16 +4125,16 @@
         },
         {
             "name": "drupal/hdbt",
-            "version": "6.9.16",
+            "version": "6.9.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-hdbt.git",
-                "reference": "b30f5a708ee6a9fbf5b777683667a35473103fa7"
+                "reference": "dc7f4711a1a439226d483eceaf10797b4eac4815"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/b30f5a708ee6a9fbf5b777683667a35473103fa7",
-                "reference": "b30f5a708ee6a9fbf5b777683667a35473103fa7",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/dc7f4711a1a439226d483eceaf10797b4eac4815",
+                "reference": "dc7f4711a1a439226d483eceaf10797b4eac4815",
                 "shasum": ""
             },
             "require": {
@@ -4153,10 +4153,10 @@
                 "Drupal"
             ],
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/6.9.16",
+                "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/6.9.18",
                 "issues": "https://github.com/City-of-Helsinki/drupal-hdbt/issues"
             },
-            "time": "2025-02-11T07:11:26+00:00"
+            "time": "2025-02-12T12:48:42+00:00"
         },
         {
             "name": "drupal/hdbt_admin",
@@ -4344,12 +4344,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-tools.git",
-                "reference": "bc5416375195d1307adf188098d75a19a5de0224"
+                "reference": "5970c81bf894e2f76f3e6b3322f6bfaf8eb47471"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-tools/zipball/bc5416375195d1307adf188098d75a19a5de0224",
-                "reference": "bc5416375195d1307adf188098d75a19a5de0224",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-tools/zipball/5970c81bf894e2f76f3e6b3322f6bfaf8eb47471",
+                "reference": "5970c81bf894e2f76f3e6b3322f6bfaf8eb47471",
                 "shasum": ""
             },
             "require": {
@@ -4424,7 +4424,7 @@
                 "source": "https://github.com/City-of-Helsinki/drupal-tools/tree/main",
                 "issues": "https://github.com/City-of-Helsinki/drupal-tools/issues"
             },
-            "time": "2025-01-15T12:24:04+00:00"
+            "time": "2025-02-11T08:34:01+00:00"
         },
         {
             "name": "drupal/helfi_platform_config",
@@ -7356,17 +7356,17 @@
         },
         {
             "name": "drupal/views_bulk_operations",
-            "version": "4.3.2",
+            "version": "4.3.3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/views_bulk_operations.git",
-                "reference": "4.3.2"
+                "reference": "4.3.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views_bulk_operations-4.3.2.zip",
-                "reference": "4.3.2",
-                "shasum": "b3d0ee06abb15520595b83324e93c5500d5dcef3"
+                "url": "https://ftp.drupal.org/files/projects/views_bulk_operations-4.3.3.zip",
+                "reference": "4.3.3",
+                "shasum": "60d83a18ef31fd1e85fb30137fd03a55cad275f3"
             },
             "require": {
                 "drupal/core": "^10.3 || ^11"
@@ -7383,8 +7383,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "4.3.2",
-                    "datestamp": "1731070018",
+                    "version": "4.3.3",
+                    "datestamp": "1739278730",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7412,9 +7412,9 @@
             "description": "Adds an ability to perform bulk operations on selected entities from view results. Provides an API to create such operations.",
             "homepage": "https://www.drupal.org/project/views_bulk_operations",
             "support": {
-                "source": "https://git.drupalcode.org/project/views_bulk_operations/-/tree/8.x-3.x",
-                "issues": "https://www.drupal.org/project/issues/views_bulk_operations?version=8.x",
-                "docs": "https://www.drupal.org/docs/8/modules/views-bulk-operations-vbo"
+                "source": "https://git.drupalcode.org/project/views_bulk_operations",
+                "issues": "https://www.drupal.org/project/issues/views_bulk_operations?version=any_4.",
+                "docs": "https://www.drupal.org/docs/contributed-modules/views-bulk-operations-vbo"
             }
         },
         {
