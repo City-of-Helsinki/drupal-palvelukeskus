@@ -1,0 +1,3 @@
+# Test services and overrides.
+parameters:
+  helfi_api_base.internal_domains: []

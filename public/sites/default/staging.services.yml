@@ -1,6 +1,0 @@
-# Test services and overrides.
-parameters:
-  helfi_api_base.internal_domains:
-    - 'hel.fi'
-    - 'www.hel.fi'
-    - 'helfi-palvelukeskus-drupal-staging.apps.platta.hel.fi'
