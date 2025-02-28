@@ -29,10 +29,29 @@ function hdbt_subtheme_preprocess_block(&$variables) {
 /**
  * Implements hook_theme_suggestions_HOOK_alter().
  */
-function hdbt_subtheme_theme_suggestions_block_alter(&$suggestions) {
+function hdbt_subtheme_theme_suggestions_block_alter(&$suggestions, $variables) {
   // Load theme suggestions for blocks from parent theme.
   foreach ($suggestions as &$suggestion) {
     $suggestion = str_replace('hdbt_subtheme_', '', $suggestion);
+  }
+
+  $element = $variables['elements'];
+
+  if ($element['#plugin_id'] === 'system_branding_block') {
+    $suggestions[] = 'block__system_branding_block__non_core';
+  }
+
+  if ($element['#id'] === 'hdbt_subtheme_mainnavigation') {
+    $suggestions[] = 'block__mainnavigation__non_core';
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function hdbt_subtheme_theme_suggestions_region_alter(array &$suggestions, array $variables) {
+  if ($variables['elements']['#region'] === 'header_top') {
+    $suggestions[] = 'region__header_top__non_core';
   }
 }
 
