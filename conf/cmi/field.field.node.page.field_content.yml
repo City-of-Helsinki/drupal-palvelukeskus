@@ -57,10 +57,10 @@ settings:
       event_list: event_list
       contact_card_listing: contact_card_listing
       news_list: news_list
+      image_gallery: image_gallery
       service_list_search: service_list_search
       unit_search: unit_search
       unit_contact_card: unit_contact_card
-      image_gallery: image_gallery
     negate: 0
     target_bundles_drag_drop:
       accordion:
