@@ -133,6 +133,7 @@ module:
   role_delegation: 0
   scheduler: 0
   select2: 0
+  serialization: 0
   simple_sitemap: 0
   social_media: 0
   sophron: 0
