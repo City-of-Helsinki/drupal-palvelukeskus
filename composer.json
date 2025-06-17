@@ -20,6 +20,7 @@
         "drupal/helfi_platform_config": "^4.0",
         "drupal/helfi_tunnistamo": "^3.0",
         "drupal/purge": "^3.0",
+        "drupal/redis": "^1.9",
         "drupal/varnish_purge": "^2.1",
         "drush/drush": "^12"
     },
