@@ -129,6 +129,7 @@ module:
   raven: 0
   readonly_field_widget: 0
   redirect: 0
+  redis: 0
   responsive_image: 0
   role_delegation: 0
   scheduler: 0
