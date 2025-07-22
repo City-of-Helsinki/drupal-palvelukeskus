@@ -28,7 +28,6 @@ regions:
 # Libraries
 libraries:
   - hdbt_subtheme/global-styling
-#  - hdbt_subtheme/global-scripting
 
 libraries-override:
   hdbt/matomo: hdbt_subtheme/matomo
