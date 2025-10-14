@@ -8,7 +8,7 @@ dependencies:
     config:
       - external_entities.external_entity_type.helfi_news
 _core:
-  default_config_hash: 33h5UHW-ql4RJDl1qx6OZYTZSl2vsd4XwJKh8mRkAEY
+  default_config_hash: Kan7DB36LO-1iu0EqwakYUdxG0Wx_Gz9ayQu9OtLJIs
 id: helfi_news.helfi_news.default
 targetEntityType: helfi_news
 bundle: helfi_news
@@ -38,6 +38,7 @@ hidden:
   neighbourhoods_uuid: true
   node_url: true
   published_at: true
+  search_api_excerpt: true
   search_api_language: true
   short_title: true
   tags: true
