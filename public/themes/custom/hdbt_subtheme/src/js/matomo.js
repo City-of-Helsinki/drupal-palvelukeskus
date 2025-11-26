@@ -1,13 +1,12 @@
-// eslint-disable-next-line func-names
-(function($, Drupal) {
-
+((Drupal) => {
   const loadMatomoAnalytics = () => {
     // Load Matomo only if statistics cookies are allowed.
     if (Drupal.cookieConsent.getConsentStatus(['statistics'])) {
       // Matomo Tag Manager
-      // eslint-disable-next-line no-multi-assign
+      /** biome-ignore lint/suspicious/noAssignInExpressions: @todo UHF-12501 */
       const _mtm = (window._mtm = window._mtm || []);
       _mtm.push({
+        /** biome-ignore lint/complexity/useDateNow: @todo UHF-12501 */
         'mtm.startTime': new Date().getTime(),
         event: 'mtm.Start',
       });
@@ -27,4 +26,4 @@
   } else {
     Drupal.cookieConsent.loadFunction(loadMatomoAnalytics);
   }
-})(jQuery, Drupal);
+})(Drupal);
