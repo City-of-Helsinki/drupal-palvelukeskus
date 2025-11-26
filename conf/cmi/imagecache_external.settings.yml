@@ -1,6 +1,7 @@
 _core:
   default_config_hash: sYKKIgXKwriRVKA1-QEKqToS8jwnr-TasvZwHT0Asek
 imagecache_directory: externals
+imagecache_subdirectories: false
 imagecache_default_extension: .jpg
 imagecache_external_batch_flush_limit: 1000
 imagecache_external_hosts: ''
@@ -22,8 +23,7 @@ imagecache_external_allowed_mimetypes:
   - image/webp
   - image/webp;charset=utf-8
 imagecache_external_cron_flush_frequency: 0
-imagecache_subdirectories: false
+imagecache_external_cron_flush_originals: true
 svg_settings:
   allowed_tags: {  }
   allowed_attributes: {  }
-imagecache_external_cron_flush_originals: true
