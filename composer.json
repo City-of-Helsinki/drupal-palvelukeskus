@@ -32,6 +32,7 @@
         "weitzman/drupal-test-traits": "^2.3"
     },
     "conflict": {
+        "drupal/core-composer-scaffold": "<10.5 || >=11",
         "drupal/drupal": "*"
     },
     "config": {
