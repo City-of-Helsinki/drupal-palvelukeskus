@@ -45,6 +45,7 @@ display:
       empty:
         area_text_custom:
           content: 'Tiedostoja ei ole saatavilla.'
+          format_plural_string: !!binary MSBwbGFjZQNAY291bnQgcGxhY2Vz
       filters:
         filename:
           expose:
