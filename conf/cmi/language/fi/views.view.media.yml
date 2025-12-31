@@ -1,8 +1,28 @@
-description: 'Etsi ja ylläpidä mediatiedostoja.'
 display:
   default:
-    display_title: Oletus
     display_options:
+      filters:
+        status:
+          expose:
+            description: ''
+            label: Tosi
+          group_info:
+            label: Julkaisutila
+            group_items:
+              1:
+                title: Julkaistu
+              2:
+                title: Julkaisematon
+        name:
+          expose:
+            label: 'Mediatiedoston nimi'
+        bundle:
+          expose:
+            label: Tyyppi
+        langcode:
+          expose:
+            label: Kieli
+      title: Media
       fields:
         media_bulk_form:
           action_title: Toiminto
@@ -77,3 +97,4 @@ display:
       menu:
         title: Media
 label: Media
+description: 'Etsi ja ylläpidä mediatiedostoja.'
