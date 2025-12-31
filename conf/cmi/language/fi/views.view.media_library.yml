@@ -26,7 +26,7 @@ display:
           sort_desc_label: Laskevasti
       empty:
         area_text_custom:
-          content: 'Ei mediaa saatavilla.'
+          content: 'Mediatiedostoja ei ole saatavilla.'
       sorts:
         created:
           expose:
