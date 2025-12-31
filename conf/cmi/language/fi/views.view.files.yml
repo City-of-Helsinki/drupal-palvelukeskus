@@ -1,9 +1,10 @@
-label: Tiedostot
-description: 'Etsi ja hallitse tiedostoja.'
 display:
   default:
-    display_title: Oletus
     display_options:
+      empty:
+        area_text_custom:
+          format_plural_string: !!binary MSBwbGFjZQNAY291bnQgcGxhY2Vz
+          content: 'Tiedostoja ei ole saatavilla.'
       title: Tiedostot
       fields:
         fid:
@@ -42,10 +43,6 @@ display:
           exposed_sorts_label: Lajittele
           sort_asc_label: Nousevasti
           sort_desc_label: Laskevasti
-      empty:
-        area_text_custom:
-          content: 'Tiedostoja ei ole saatavilla.'
-          format_plural_string: !!binary MSBwbGFjZQNAY291bnQgcGxhY2Vz
       filters:
         filename:
           expose:
@@ -56,6 +53,7 @@ display:
         status:
           expose:
             label: Tila
+    display_title: Oletus
   page_1:
     display_title: Tiedostot
     display_options:
@@ -87,3 +85,5 @@ display:
         fid:
           exception:
             title: Kaikki
+label: Tiedostot
+description: 'Etsi ja hallitse tiedostoja.'

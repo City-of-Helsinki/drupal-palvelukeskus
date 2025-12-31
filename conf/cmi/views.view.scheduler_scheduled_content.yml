@@ -2,18 +2,14 @@ uuid: 9947b318-fd6b-4963-b7c1-47ffb1a2fa62
 langcode: en
 status: true
 dependencies:
-  config:
-    - system.menu.admin
   module:
     - node
+    - scheduler
     - user
-  enforced:
-    module:
-      - scheduler
 _core:
   default_config_hash: uZN6cIt2dD4FwsmAOJePjdGDOLwx9TjvixvVXEetc9k
 id: scheduler_scheduled_content
-label: 'Scheduled Content'
+label: 'Scheduled content'
 module: views
 description: 'Find and manage scheduled content.'
 tag: ''
@@ -22,7 +18,7 @@ base_field: vid
 display:
   default:
     id: default
-    display_title: Master
+    display_title: Default
     display_plugin: default
     position: 0
     display_options:
@@ -382,6 +378,15 @@ display:
             date_format: short
             custom_date_format: ''
             timezone: ''
+            tooltip:
+              date_format: ''
+              custom_date_format: ''
+            time_diff:
+              enabled: false
+              future_format: '@interval hence'
+              past_format: '@interval ago'
+              granularity: 2
+              refresh: 60
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -449,6 +454,15 @@ display:
             date_format: short
             custom_date_format: ''
             timezone: ''
+            tooltip:
+              date_format: ''
+              custom_date_format: ''
+            time_diff:
+              enabled: false
+              future_format: '@interval hence'
+              past_format: '@interval ago'
+              granularity: 2
+              refresh: 60
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -514,14 +528,15 @@ display:
         type: full
         options:
           offset: 0
+          pagination_heading_level: h4
           items_per_page: 50
           total_pages: null
           id: 0
           tags:
-            next: 'next ›'
-            previous: '‹ previous'
-            first: '« first'
-            last: 'last »'
+            next: Next
+            previous: Previous
+            first: First
+            last: Last
       exposed_form:
         type: basic
         options:
@@ -533,9 +548,7 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       access:
-        type: perm
-        options:
-          perm: 'view scheduled content'
+        type: scheduler
       cache:
         type: tag
         options: {  }
@@ -579,7 +592,10 @@ display:
             required: false
             remember: false
             multiple: false
-            remember_roles: {  }
+            remember_roles:
+              anonymous: '0'
+              authenticated: '0'
+              administrator: '0'
           is_grouped: false
           group_info:
             label: ''
@@ -618,7 +634,10 @@ display:
             required: false
             remember: false
             multiple: false
-            remember_roles: {  }
+            remember_roles:
+              anonymous: '0'
+              authenticated: '0'
+              administrator: '0'
             placeholder: ''
           is_grouped: false
           group_info:
@@ -658,7 +677,10 @@ display:
             required: false
             remember: false
             multiple: false
-            remember_roles: {  }
+            remember_roles:
+              anonymous: '0'
+              authenticated: '0'
+              administrator: '0'
             reduce: false
           is_grouped: false
           group_info:
@@ -698,7 +720,10 @@ display:
             required: false
             remember: false
             multiple: false
-            remember_roles: {  }
+            remember_roles:
+              authenticated: '0'
+              anonymous: '0'
+              administrator: '0'
           is_grouped: true
           group_info:
             label: 'Published status'
@@ -745,7 +770,10 @@ display:
             required: false
             remember: false
             multiple: false
-            remember_roles: {  }
+            remember_roles:
+              anonymous: '0'
+              authenticated: '0'
+              administrator: '0'
             reduce: false
           is_grouped: false
           group_info:
@@ -789,7 +817,10 @@ display:
             required: false
             remember: false
             multiple: false
-            remember_roles: {  }
+            remember_roles:
+              anonymous: '0'
+              authenticated: '0'
+              administrator: '0'
             min_placeholder: ''
             max_placeholder: ''
             placeholder: ''
@@ -835,7 +866,10 @@ display:
             required: false
             remember: false
             multiple: false
-            remember_roles: {  }
+            remember_roles:
+              anonymous: '0'
+              authenticated: '0'
+              administrator: '0'
             min_placeholder: ''
             max_placeholder: ''
             placeholder: ''
@@ -931,7 +965,6 @@ display:
           empty_table: true
           caption: ''
           description: ''
-          class: ''
       row:
         type: fields
       query:
@@ -975,8 +1008,8 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - user
         - 'user.node_grants:view'
-        - user.permissions
       tags: {  }
   overview:
     id: overview
@@ -990,8 +1023,8 @@ display:
       path: admin/content/scheduled
       menu:
         type: normal
-        title: 'Scheduled Content'
-        description: 'Content that is scheduled for publishing or unpublishing'
+        title: Scheduled
+        description: 'Content scheduled for publishing and unpublishing'
         weight: -10
         expanded: false
         menu_name: admin
@@ -1010,19 +1043,15 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - user
         - 'user.node_grants:view'
-        - user.permissions
       tags: {  }
   user_page:
     id: user_page
-    display_title: User
+    display_title: 'User profile tab'
     display_plugin: page
     position: 2
     display_options:
-      access:
-        type: perm
-        options:
-          perm: 'access content'
       empty:
         area_text_custom:
           id: area_text_custom
@@ -1080,12 +1109,11 @@ display:
           target_entity_type_id: user
       defaults:
         empty: false
-        access: false
+        access: true
         arguments: false
         filters: true
         filter_groups: true
       display_description: "Scheduled content tab on user profile, showing just that user's scheduled content"
-      display_comment: 'Access to the user view is controlled via SchedulerRouteSubscriber::alterRoutes(). The high-level permission "access content" is added to satisfy the security_review module'
       display_extenders: {  }
       path: user/%user/scheduled
       menu:
@@ -1094,7 +1122,7 @@ display:
         description: ''
         weight: -10
         menu_name: admin
-        parent: user.page
+        parent: system.admin_content
         context: '0'
       tab_options:
         type: normal
@@ -1109,6 +1137,6 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - user
         - 'user.node_grants:view'
-        - user.permissions
       tags: {  }
