@@ -4,12 +4,12 @@ This project contains Drupal website for Palvelukeskus Helsinki.
 
 ## Environments
 
-Env         | Branch | Drush alias | URL
------------ | ------ | ----------- | ---
-development | dev    | -           | https:///drupal-palvelukeskus.docker.so/
-test        | dev    | -           | https://palvelukeskus.test.hel.fi/fi
-stage       | main   | -           | https://palvelukeskus.stage.hel.fi/fi
-main        | <tag>  | -           | https://palvelukeskus.hel.fi/fi
+Env         | Branch    | Drush alias | URL
+----------- | --------- | ----------- | ---
+development | dev       | -           | https:///drupal-palvelukeskus.docker.so/
+test        | dev       | -           | https://palvelukeskus.test.hel.fi/fi
+stage       | main      | -           | https://palvelukeskus.stage.hel.fi/fi
+main        | tag-based | -           | https://palvelukeskus.hel.fi/fi
 
 ## Requirements
 
