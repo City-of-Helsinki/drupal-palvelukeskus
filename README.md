@@ -1,14 +1,15 @@
-# Your Drupal 9 project
+# Palvelukeskus
 
-Description of your project.
+This project contains Drupal website for Palvelukeskus Helsinki.
 
 ## Environments
 
-Env | Branch | Drush alias | URL
---- | ------ | ----------- | ---
-development | main | - | https:///drupal-palvelukeskus.docker.so/
-test        | dev  | - | https://helfi-palvelukeskus-drupal-test.agw.arodevtest.hel.fi
-main  | prod | - | https://palvelukeskus.hel.fi/fi
+Env         | Branch    | Drush alias | URL
+----------- | --------- | ----------- | ---
+development | dev       | -           | https:///drupal-palvelukeskus.docker.so/
+test        | dev       | -           | https://palvelukeskus.test.hel.fi/fi
+stage       | main      | -           | https://palvelukeskus.stage.hel.fi/fi
+main        | tag-based | -           | https://palvelukeskus.hel.fi/fi
 
 ## Requirements
 
@@ -16,7 +17,6 @@ You need to have these applications installed to operate on all environments:
 
 - [Docker](https://github.com/druidfi/guidelines/blob/master/docs/docker.md)
 - [Stonehenge](https://github.com/druidfi/stonehenge)
-- For the new person: Your SSH public key needs to be added to servers
 
 ## Create and start the environment
 
