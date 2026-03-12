@@ -13,10 +13,9 @@ settings:
   client_id: ''
   client_secret: ''
   iss_allowed_domains: ''
-  is_production: 0
+  prompt:
+    login: login
   auto_login: 0
   environment_url: ''
   client_scopes: 'openid,email'
   client_roles: {  }
-  loa_roles: {  }
-  ad_roles: {  }
