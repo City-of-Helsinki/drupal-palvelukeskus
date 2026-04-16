@@ -1,14 +1,13 @@
-uuid: af219d81-d5ca-4a89-9654-d455219c594a
+uuid: fedece68-fad8-442b-875c-d55db6f6514a
 langcode: en
 status: true
 dependencies:
-  enforced:
-    config:
-      - paragraphs.paragraphs_type.list_of_links
   module:
     - entity_reference_revisions
     - paragraphs
-
+  enforced:
+    config:
+      - paragraphs.paragraphs_type.list_of_links
 _core:
   default_config_hash: 1lEuqH9MsawJsxi8xH5cU7w5X-zaomugzu-hu5i7zGw
 id: paragraph.field_list_of_links_links
