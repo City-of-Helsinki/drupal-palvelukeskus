@@ -8,10 +8,6 @@ types:
     '*': '*'
   taxonomy_term:
     '*': '*'
-  tpr_service:
-    '*': '*'
-  tpr_unit:
-    '*': '*'
 types_translation_lock: {  }
 form_op_lock: {  }
 timeout: 7200
