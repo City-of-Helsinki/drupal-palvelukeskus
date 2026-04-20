@@ -11,7 +11,7 @@ dependencies:
 id: hdbt_subtheme_footertopnavigationsecond
 theme: hdbt_subtheme
 region: footer_top
-weight: 0
+weight: -11
 provider: null
 plugin: 'menu_block_current_language:footer-top-navigation-2'
 settings:

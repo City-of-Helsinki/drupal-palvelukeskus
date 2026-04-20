@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9bbe0f8a00cf54a6d12a34c8cd4d1387",
+    "content-hash": "424db9ac6e2338e6d4ed6d8735b95110",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4658,6 +4658,40 @@
                 "issues": "https://github.com/City-of-Helsinki/drupal-tools/issues"
             },
             "time": "2026-02-28T06:56:13+00:00"
+        },
+        {
+            "name": "drupal/helfi_navigation",
+            "version": "2.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-navigation.git",
+                "reference": "0e56667c0a39477f3d9dc80c693ef72b89bf29d2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-navigation/zipball/0e56667c0a39477f3d9dc80c693ef72b89bf29d2",
+                "reference": "0e56667c0a39477f3d9dc80c693ef72b89bf29d2",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/helfi_api_base": "*",
+                "drupal/menu_block_current_language": "^2.0",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+                "drupal/coder": "^8.3"
+            },
+            "type": "drupal-module",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Helfi - Navigation",
+            "support": {
+                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-navigation/tree/2.3.1",
+                "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-navigation/issues"
+            },
+            "time": "2026-01-19T10:40:27+00:00"
         },
         {
             "name": "drupal/helfi_platform_config",
