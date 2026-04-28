@@ -1,3 +1,7 @@
 # Test services and overrides.
 parameters:
-  helfi_api_base.internal_domains: []
+  helfi_api_base.internal_domains:
+    - 'palvelukeskus.hel.fi'
+    - 'palvelukeskus.test.hel.fi'
+    - 'palvelukeskus.stage.hel.fi'
+    - 'drupal-palvelukeskus.docker.so'
