@@ -9,6 +9,9 @@ dependencies:
     - media
     - raven
     - system
+    - rest
+  config:
+    - rest.resource.helfi_global_mobile_menu
 _core:
   default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
 id: anonymous
@@ -30,3 +33,4 @@ permissions:
   - 'view tpr_ontology_word_details'
   - 'view tpr_service'
   - 'view tpr_unit'
+  - 'restful get helfi_global_mobile_menu'
