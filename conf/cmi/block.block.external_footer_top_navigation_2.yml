@@ -2,8 +2,6 @@ uuid: 13cdc5ae-3a7f-467e-b35f-e3efe29d590e
 langcode: en
 status: false
 dependencies:
-  config:
-    - footer-top-navigation-2
   module:
     - helfi_navigation
   theme:
