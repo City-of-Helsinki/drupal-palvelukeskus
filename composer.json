@@ -42,7 +42,8 @@
             "php-http/discovery": true,
             "phpstan/extension-installer": true,
             "tbachert/spi": false,
-            "mglaman/composer-drupal-lenient": true
+            "mglaman/composer-drupal-lenient": true,
+            "symfony/runtime": true
         },
         "audit": {
             "abandoned": "report",
