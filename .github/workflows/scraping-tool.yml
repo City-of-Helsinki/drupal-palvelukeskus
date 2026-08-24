@@ -1,0 +1,11 @@
+on:
+  workflow_dispatch:
+  schedule:
+    # Run once a month
+    - cron:  '0 0 * * 0'
+name: Build scraping tool artifact
+jobs:
+  mirror:
+    uses: city-of-helsinki/drupal-gh-actions/.github/workflows/scraping-tool.yml@main
+    with:
+      domain: 'palvelukeskus.hel.fi'
