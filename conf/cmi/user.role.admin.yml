@@ -25,7 +25,6 @@ dependencies:
     - external_entities
     - file
     - filter
-    - hdbt_cookie_banner
     - helfi_api_base
     - helfi_tpr
     - locale
@@ -68,12 +67,12 @@ permissions:
   - 'access tpr_unit overview'
   - 'access user profiles'
   - 'administer blocks'
-  - 'administer hdbt_cookie_banner'
   - 'administer menu'
   - 'administer nodes'
   - 'administer paragraphs library'
   - 'administer pathauto'
   - 'administer redirects'
+  - 'administer site configuration'
   - 'administer sitemap settings'
   - 'administer tpr_service'
   - 'administer tpr_unit'
